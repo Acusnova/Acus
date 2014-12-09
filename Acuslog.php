@@ -128,7 +128,7 @@
 											<li class="divider"></li>
 											<li><a href="#"><h4><span class="glyphicon glyphicon-pencil">  Kopje Bewerken</h4></a></li>
 											<li><a href="#"><h4><span class="glyphicon glyphicon-trash">  Kopje Verwijderen</h4></a></li>
-											<li><a href="#"><h4><span class="glyphicon glyphicon-user">  Uitloggen</h4></a></li>
+											<li><a href="logout.php"><h4><span class="glyphicon glyphicon-user">  Uitloggen</h4></a></li>
 
 									                  <!-- table voor inlog -->
 									                  <?php
