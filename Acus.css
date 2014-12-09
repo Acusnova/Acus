@@ -106,11 +106,15 @@
         background-color: blue;
     }
 
-    .welkom
+     .Welkom
     {
-        height:54px;
-        width:118px;
-    }
+        border-color: #3399cc;
+        width: 100%;
+        height: 54px; 
+        font-size: 120%;
+        border-radius: 1px;
+        font-family:'Glyphicons Halflings';
+    } 
 
     .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus
     {
