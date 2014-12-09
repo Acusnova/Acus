@@ -27,20 +27,38 @@
 
 
 
-          <!-- Modal -->
-          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                </div>
-                <div class="modal-body">
-                  modal 1
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+			<!-- Modals -->
+			<div class="modal fade" id="Rooster" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"  data-backdrop="static" >
+				<div class="modal-dialog">
+					<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<div class="modal-header">
+						
+							<h2 class="modal-title" id="myModalLabel">Roosters</h2>
+						</div>
+						<div class="modal-body">
+							<h3>Deze link leidt naar de nova roosters:
+								<a href="http://www.novaprojecten.nl/roosters/lbl/basis/default.htm">Roosters</a></h3>
+							<h3>
+								INFORMATIE HIER BLOEDHONDEN<br>
+								INFORMATIE HIER BLOEDHONDEN<br>
+								INFORMATIE HIER BLOEDHONDEN<br>
+								INFORMATIE HIER BLOEDHONDEN<br>
+								INFORMATIE HIER BLOEDHONDEN<br>
+								INFORMATIE HIER BLOEDHONDEN<br>
+								INFORMATIE HIER BLOEDHONDEN<br>
+								INFORMATIE HIER BLOEDHONDEN<br>
+								INFORMATIE HIER BLOEDHONDEN<br>
+								INFORMATIE HIER BLOEDHONDEN<br>
+								INFORMATIE HIER BLOEDHONDEN<br>
+								INFORMATIE HIER BLOEDHONDEN<br>
+								INFORMATIE HIER BLOEDHONDEN<br>
+								INFORMATIE HIER BLOEDHONDEN<br>
+								INFORMATIE HIER BLOEDHONDEN<br>
+								INFORMATIE HIER BLOEDHONDEN<br>
+							</h3>
+						
+
                 </div>
               </div>
             </div>
@@ -48,7 +66,7 @@
 
        
 
-    <div class="container">
+
 
       <!-- Static navbar -->
       <nav class="navbar navbar-default " role="navigation">
@@ -66,56 +84,89 @@
             <ul class="nav navbar-nav navbar-right">
 
             	<!-- Welkom -->
-<li class="dropdown">
-                <a href="#" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"> Welkom <span class="caret"></span></span></a>
-              </li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
+									<li class="dropdown">
+										<a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" ><span class="glyphicon glyphicon-user"> Login <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+										<li class="logtop">Login</li>
+									
+									    <?php
+									                  include('login.php'); // Includes Login Script
+									                  ?>
+																		                  <form class="form-horizontal" action="" method="post">
+									                  <div class="form-group">
+									                    <label for="inputEmail3" class="col-sm-2 control-label">Naam</label>
+									                    <div class="col-sm-10">
+									                      <input class="form-control" id="name" name="username" placeholder="username" type="text">
+									                    </div>
+									                  </div>
+									                  <div class="form-group">
+									                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+									                    <div class="col-sm-10">
+									                      <input class="form-control" id="password" name="password" placeholder="**********" type="password">
+									                    </div>
+									                  </div>
+									                  <div class="form-group">
+									                    <div class="col-sm-offset-2 col-sm-10">
+									                      <div class="checkbox">
+									                      </div>
+									                    </div>
+									                  </div>
+									                  <div class="form-group" style="margin-left: 170px; margin-top: -30px;">
+									                    <div class="col-sm-offset-2 col-sm-10">
+									                      <button type="submit" name="submit" class="btn btn-default" value=" Login ">Login</button>
+									                 <span> <?php echo $error; ?> </span>
+									                    </div>
+									                  </div>
+									                </form>
+													</li>
+									</ul>
+									<li class="dropdown">
+										<a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											
+											<li class="dropdown-header"><h4>Aanpassings Menu</h4></li>
+											<li class="divider"></li>
+											<li><a href="#"><h4><span class="glyphicon glyphicon-pencil">  Kopje Bewerken</h4></a></li>
+											<li><a href="#"><h4><span class="glyphicon glyphicon-trash">  Kopje Verwijderen</h4></a></li>
+											<li><a href="#"><h4><span class="glyphicon glyphicon-user">  Uitloggen</h4></a></li>
 
-      <!-- Main component for a primary marketing message or call to action -->
+									                  <!-- table voor inlog -->
+									                  <?php
+									                  include('login.php'); // Includes Login Script
+									                  ?>
 
+									                  <!-- End Table -->
+										</ul>
+									</li>
+								</ul>
+							</div><!--/.nav-collapse -->
+						</div><!--/.container-fluid -->
+					</nav>
 
-    </div> <!-- /container -->
-	
-	            <div class="row">
-				<div class="col-md-2">
+					<!-- Main component for a primary marketing message or call to action -->
+
+				<div class="container">
+			
+				
+				<div class="row">
+				<div class="col-md-4">
+					<button type="button" class="btn btn-info btn-lg knop " data-toggle="modal" data-target="#Printer"> <span class="glyphicon glyphicon-print"></br>Printers</button>
 				</div>
-				<div class="col-md-1">
+				<div class="col-md-4">
+					<button type="button" class="btn btn-info btn-lg knop " data-toggle="modal" data-target="#Rooster"><span class="glyphicon glyphicon-list-alt"></br>Roosters</button>
 				</div>
-                <div class="col-md-2">
-                    <button type="button" class="btn btn-info btn-lg knop " data-toggle="modal" data-target="#myModal"> <span class="glyphicon glyphicon-print"></br>Printers</button>
-                </div>
-
-      
-                <div class="col-md-2">
-                    <button type="button" class="btn btn-info btn-lg knop " data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-list-alt"></br>Roosters</button>
-                </div>
-				<div class="col-md-2">
-                    <button type="button" class="btn btn-info btn-lg knop " data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-th-large"></br>Office</button>
-                </div>
-								<div class="col-md-2">
+				<div class="col-md-4">
+					<button type="button" class="btn btn-info btn-lg knop " data-toggle="modal" data-target="#Office"><span class="glyphicon glyphicon-th-large"></br>Office</button>
+				</div>
+				<div class="col-md-4">
+					<button type="button" class="btn btn-info btn-lg knop " data-toggle="modal" data-target="#Ziekmelden"><span class="glyphicon glyphicon-plus"></br>Ziekmelden</button>
 				</div>
 
-
-            </div>
-			<div class="row">
-				<div class="col-md-2">
+				<div class="col-md-4">
+					<button type="button" class="btn btn-info btn-lg knop " data-toggle="modal" data-target="#Prog"><span class="glyphicon glyphicon-folder-open"></br>Programma's</button>
 				</div>
-				<div class="col-md-1">
-				</div>
-                <div class="col-md-2">
-                    <button type="button" class="btn btn-info btn-lg knop " data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></br>Ziekmelden</button>
-                </div>
-                
-                <div class="col-md-2">
-                    <button type="button" class="btn btn-info btn-lg knop " data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-folder-open"></br>Programma's</button>
-                </div>
-				<div class="col-md-2">
-                    <button type="button" class="btn btn-info btn-lg knop" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></br>Docenten</button>
-                </div>
-								<div class="col-md-2">
+				<div class="col-md-4">
+					<button type="button" class="btn btn-info btn-lg knop" data-toggle="modal" data-target="#Docent"><span class="glyphicon glyphicon-user"></br>Docenten</button>
 				</div>
 
 
@@ -124,14 +175,21 @@
 			<!-- De Plus button Voor als je ingelogd bent -->
 				
 				<div class="row">
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-1">
-				</div>
-                <div class="col-md-2">//
+                <div class="col-md-4">
 				<button type="button" class="btn btn-success btn-lg add "><span class="glyphicon glyphicon-plus"></br></button>
                 </div>
 				</div>     
+					
+				<footer class="footer">
+
+				<div class="container">
+				<p class="text-muted">
+
+								Place sticky footer content here.
+
+				</p>
+				</div>
+				</footer>
             
             
     <!-- Bootstrap core JavaScript
