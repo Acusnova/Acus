@@ -168,20 +168,22 @@
 				</div>
 					
 					</div>
-					<footer class="footer">
 
-						<div class="container">
-							<p class="text-muted">
-
-								© Copyright 2014 Novaboys Acus
-
-							</p>
-						</div>
-
-					</footer>
 
 				</div>	
 				</div>
+
+                  <footer class="footer">
+
+            <div class="container">
+              <p class="text-muted">
+
+                © Copyright 2014 Novaboys Acus
+
+              </p>
+            </div>
+
+          </footer>
 				<!-- Bootstrap core JavaScript
 				================================================== -->
 				<!-- Placed at the end of the document so the pages load faster -->
