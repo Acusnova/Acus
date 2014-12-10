@@ -118,16 +118,6 @@
 									                </form>
 													</li>
 									</ul>
-									<li class="dropdown">
-										<a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
-										<ul class="dropdown-menu" role="menu">
-											
-											<li class="dropdown-header"><h4>Aanpassings Menu</h4></li>
-											<li class="divider"></li>
-											<li><a href="#"><h4><span class="glyphicon glyphicon-pencil">  Kopje Bewerken</h4></a></li>
-											<li><a href="#"><h4><span class="glyphicon glyphicon-trash">  Kopje Verwijderen</h4></a></li>
-											<li><a href="#"><h4><span class="glyphicon glyphicon-user">  Uitloggen</h4></a></li>
-
 									                  <!-- table voor inlog -->
 									                  <?php
 									                  include('login.php'); // Includes Login Script
