@@ -173,7 +173,7 @@
 						<div class="container">
 							<p class="text-muted">
 
-								Place sticky footer content here.
+								© Copyright 2014 Novaboys Acus
 
 							</p>
 						</div>
