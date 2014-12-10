@@ -104,6 +104,15 @@
 
 					<!-- Main component for a primary marketing message or call to action -->
 
+					<?php
+					 require('Docenten.php');
+					 require('Ziekmelden.php');
+					 require('Roosters.php');
+					 require('Office.php');
+					 require('Printers.php');
+					 require('Prog.php');
+					 ?>
+					
 				<div class="container">
 			
 				
