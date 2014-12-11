@@ -52,6 +52,7 @@
 						</h3>
 					</div>			
 				</div>
+<<<<<<< HEAD
 			</div>
 		</div>
 		<!-- Static navbar -->
@@ -128,6 +129,90 @@
 
 		<div class="container">							
 			<div class="row">
+=======
+
+				
+
+				
+
+					<!-- Static navbar -->
+					<nav class="navbar navbar-default " role="navigation">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="http://localhost/Acus/Acus.php"></span><span class="glyphicon glyphicon-random"> Acus</a>
+							</div>
+							<div id="navbar" class="navbar-collapse collapse">
+								<ul class="nav navbar-nav navbar-right">
+									<li class="dropdown">
+										<a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" ><span class="glyphicon glyphicon-user"> Login <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+										<li class="logtop">Login</li>
+									
+									    <?php
+									                  include('login.php'); // Includes Login Script
+									                  ?>
+																		                  <form class="form-horizontal" action="" method="post">
+									                  <div class="form-group">
+									                    <label for="inputEmail3" class="col-sm-2 control-label">Naam</label>
+									                    <div class="col-sm-10">
+									                      <input class="form-control" id="name" name="username" placeholder="username" type="text">
+									                    </div>
+									                  </div>
+									                  <div class="form-group">
+									                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+									                    <div class="col-sm-10">
+									                      <input class="form-control" id="password" name="password" placeholder="**********" type="password">
+									                    </div>
+									                  </div>
+									                  <div class="form-group">
+									                    <div class="col-sm-offset-2 col-sm-10">
+									                      <div class="checkbox">
+									                      </div>
+									                    </div>
+									                  </div>
+									                  <div class="form-group" style="margin-left: 170px; margin-top: -30px;">
+									                    <div class="col-sm-offset-2 col-sm-10">
+									                      <button type="submit" name="submit" class="btn btn-default" value=" Login ">Login</button>
+									                 <span> <?php echo $error; ?> </span>
+									                    </div>
+									                  </div>
+									                </form>
+													</li>
+									</ul>
+									                  <!-- table voor inlog -->
+									                  <?php
+									                  include('login.php'); // Includes Login Script
+									                  ?>
+
+									                  <!-- End Table -->
+										</ul>
+									</li>
+								</ul>
+							</div><!--/.nav-collapse -->
+						</div><!--/.container-fluid -->
+					</nav>
+
+					<!-- Main component for a primary marketing message or call to action -->
+					<?php
+					 require('Docenten.php');
+					 require('Ziekmelden.php');
+					 require('Roosters.php');
+					 require('Office.php');
+					 require('Printers.php');
+					 require('Prog.php');
+					 ?>
+					 
+				<div class="container">
+			
+				
+				<div class="row">
+>>>>>>> origin/master
 				<div class="col-md-4">
 					<button type="button" class="btn btn-info btn-lg knop " data-toggle="modal" data-target="#Printer"> <span class="glyphicon glyphicon-print"></br>Printers</button>
 				</div>
@@ -154,6 +239,7 @@
 						Place sticky footer content here.
 					</p>
 				</div>
+<<<<<<< HEAD
 			</footer>	
 		</div>
 		<!-- Bootstrap core JavaScript
@@ -166,3 +252,33 @@
 		<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 	</body>
 </html>
+=======
+					
+					</div>
+
+
+				</div>	
+				</div>
+
+                  <footer class="footer">
+
+            <div class="container">
+              <p class="text-muted">
+
+                © Copyright 2014 Novaboys Acus
+
+              </p>
+            </div>
+
+          </footer>
+				<!-- Bootstrap core JavaScript
+				================================================== -->
+				<!-- Placed at the end of the document so the pages load faster -->
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+				<script src="Bootstrapjs/bootstrap.min.js"></script>
+				<script src="Bootstrap/js/bootstrap.js"></script>
+				<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+				<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+			</body>
+			</html>
+>>>>>>> origin/master
