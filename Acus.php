@@ -72,53 +72,53 @@
 							<a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" ><span class="glyphicon glyphicon-user"> Login <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li class="logtop">Login</li>									
-									<?php
-										include('login.php'); // Includes Login Script
-									?>
-									<form class="form-horizontal" action="" method="post">
+								<?php
+									include('login.php'); // Includes Login Script
+								?>
+								<form class="form-horizontal" action="" method="post">
+									<div class="form-group">
+										<label for="inputEmail3" class="col-sm-2 control-label">Naam</label>
+										<div class="col-sm-10">
+											<input class="form-control" id="name" name="username" placeholder="username" type="text">
+										</div>
 										<div class="form-group">
-											<label for="inputEmail3" class="col-sm-2 control-label">Naam</label>
+											<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
 											<div class="col-sm-10">
-												<input class="form-control" id="name" name="username" placeholder="username" type="text">
+												<input class="form-control" id="password" name="password" placeholder="**********" type="password">
 											</div>
-											<div class="form-group">
-												<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-												<div class="col-sm-10">
-													<input class="form-control" id="password" name="password" placeholder="**********" type="password">
-												</div>
-											</div>
-											<div class="form-group">
-												<div class="col-sm-offset-2 col-sm-10">
-													<div class="checkbox">
-													</div>
-												</div>
-											</div>
-											<div class="form-group" style="margin-left: 170px; margin-top: -30px;">
-												<div class="col-sm-offset-2 col-sm-10">
-													<button type="submit" name="submit" class="btn btn-default" value=" Login ">Login</button>
-													<span> <?php echo $error; ?> </span>
+										</div>
+										<div class="form-group">
+											<div class="col-sm-offset-2 col-sm-10">
+												<div class="checkbox">
 												</div>
 											</div>
 										</div>
-									</form>
-								</li>
-							</ul>
-							<li class="dropdown">
-								<a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
-								<ul class="dropdown-menu" role="menu">										
-									<li class="dropdown-header"><h4>Aanpassings Menu</h4></li>
-									<li class="divider"></li>
-									<li><a href="#"><h4><span class="glyphicon glyphicon-pencil">  Kopje Bewerken</h4></a></li>
-									<li><a href="#"><h4><span class="glyphicon glyphicon-trash">  Kopje Verwijderen</h4></a></li>
-									<li><a href="#"><h4><span class="glyphicon glyphicon-user">  Uitloggen</h4></a></li>
-
-									<!-- Login Table -->
-									<?php
-										include('login.php'); // Includes Login Script
-									?>
-									<!-- End Table -->
-								</ul>
+										<div class="form-group" style="margin-left: 170px; margin-top: -30px;">
+											<div class="col-sm-offset-2 col-sm-10">
+												<button type="submit" name="submit" class="btn btn-default" value=" Login ">Login</button>
+												<span> <?php echo $error; ?> </span>
+											</div>
+										</div>
+									</div>
+								</form>
 							</li>
+						</ul>
+						<li class="dropdown">
+							<a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">										
+								<li class="dropdown-header"><h4>Aanpassings Menu</h4></li>
+								<li class="divider"></li>
+								<li><a href="#"><h4><span class="glyphicon glyphicon-pencil">  Kopje Bewerken</h4></a></li>
+								<li><a href="#"><h4><span class="glyphicon glyphicon-trash">  Kopje Verwijderen</h4></a></li>
+								<li><a href="#"><h4><span class="glyphicon glyphicon-user">  Uitloggen</h4></a></li>
+
+								<!-- Login Table -->
+								<?php
+									include('login.php'); // Includes Login Script
+								?>
+								<!-- End Table -->
+							</ul>
+						</li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div><!--/.container-fluid -->
