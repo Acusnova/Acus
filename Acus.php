@@ -111,7 +111,6 @@
 								<li><a href="#"><h4><span class="glyphicon glyphicon-pencil">  Kopje Bewerken</h4></a></li>
 								<li><a href="#"><h4><span class="glyphicon glyphicon-trash">  Kopje Verwijderen</h4></a></li>
 								<li><a href="#"><h4><span class="glyphicon glyphicon-user">  Uitloggen</h4></a></li>
-
 								<!-- Login Table -->
 								<?php
 									include('login.php'); // Includes Login Script
@@ -125,7 +124,14 @@
 		</nav>
 
 		<!-- Main component for a primary marketing message or call to action -->
-
+		<?php
+			require('Docenten.php');
+			require('Ziekmelden.php');
+			require('Roosters.php');
+			require('Office.php');
+			require('Printers.php');
+			require('Prog.php');
+		?>
 		<div class="container">							
 			<div class="row">
 				<div class="col-md-4">
@@ -147,15 +153,15 @@
 					<button type="button" class="btn btn-info btn-lg knop" data-toggle="modal" data-target="#Docent"><span class="glyphicon glyphicon-user"></br>Docenten</button>
 				</div>					
 			</div>
-			
-			<footer class="footer">
-				<div class="container">
-					<p class="text-muted">
-						Place sticky footer content here.
-					</p>
-				</div>
-			</footer>	
 		</div>
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted">
+					© Copyright 2014 Novaboys Acus
+				</p>
+			</div>
+		</footer>
+
 		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
